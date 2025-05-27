@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { MicrophoneIcon, XMarkIcon, HeartIcon, SpeakerWaveIcon } from '@heroicons/react/24/solid';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const API_KEY = "AIzaSyCyhFk6Lyws7Tf2CcTG_8HIspB-UuP0l0M";
 
@@ -169,6 +170,7 @@ function App() {
               className="rounded-full w-32 h-32 object-cover border-4 border-rose-300 shadow-lg backdrop-blur-md"
             />
           </div>
+          <SpeedInsights/>
           <div className="bg-gradient-to-r from-rose-400/80 to-pink-400/80 rounded-2xl p-6 mt-4 flex items-center flex-col gap-6 backdrop-blur-lg shadow-lg">
             <div className="flex gap-4">
               {isListening ? (
